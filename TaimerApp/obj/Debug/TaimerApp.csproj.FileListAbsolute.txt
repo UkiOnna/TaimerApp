@@ -1,0 +1,14 @@
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\bin\Debug\TaimerApp.exe.config
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\bin\Debug\TaimerApp.exe
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\bin\Debug\TaimerApp.pdb
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp.csprojResolveAssemblyReference.cache
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\MainWindow.g.cs
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\App.g.cs
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp_MarkupCompile.cache
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp_MarkupCompile.lref
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\MainWindow.baml
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp.g.resources
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp.Properties.Resources.resources
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp.csproj.GenerateResource.Cache
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp.exe
+c:\users\сикировт\documents\visual studio 2017\Projects\TaimerApp\TaimerApp\obj\Debug\TaimerApp.pdb
