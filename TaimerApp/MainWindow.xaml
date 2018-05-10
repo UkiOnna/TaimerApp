@@ -8,7 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid Background="#FF5CCD27">
         <TextBlock HorizontalAlignment="Left" Margin="179,41,0,0" TextWrapping="Wrap" Text="Начать через:" VerticalAlignment="Top"/>
-        <TextBox Name="startDay" HorizontalAlignment="Left" Height="23" Margin="179,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" GotFocus="whenTimeGotFocus"/>
+        <TextBox Name="startDay" HorizontalAlignment="Left" Height="23" Margin="179,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" />
         <TextBlock HorizontalAlignment="Left" Margin="179,111,0,0" TextWrapping="Wrap" Text="Повторять каждые" VerticalAlignment="Top" Width="144"/>
         <TextBox Name="intervalDay" HorizontalAlignment="Left" Height="23" Margin="179,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37"/>
         <TextBlock HorizontalAlignment="Left" Margin="179,160,0,0" TextWrapping="Wrap" Text="Сообщение:" VerticalAlignment="Top"/>

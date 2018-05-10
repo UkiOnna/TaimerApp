@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace TaimerApp
 {
@@ -22,35 +23,68 @@ namespace TaimerApp
     public partial class MainWindow : Window
     {
         private Timer timer;
+        private TimeSpan delay;
+        private TimeSpan interval;
         public MainWindow()
         {
             InitializeComponent();
-
-        }
-
-        private void whenTimeGotFocus(object sender, RoutedEventArgs e)
-        {
-            whenTime.Text = "";
+            timer = null;
         }
 
         public void ShowMessage(object text)
         {
-            timer = null;
+            TextBox message = (TextBox)text;
+            this.Dispatcher.BeginInvoke(DispatcherPriority.Normal,
+                (ThreadStart)delegate ()
+                {
+                    if (message.Text == "")
+                    {
+                        MessageBox.Show("Что то надо было!");
+                    }
+                    else
+                    {
+                        MessageBox.Show(message.Text);
+                    }
+                }
+            );
+
+
         }
 
         private void onButtonClick(object sender, RoutedEventArgs e)
         {
-            int res;
-            DateTime dres;
-            if (int.TryParse(interval.Text, out res) && DateTime.TryParse(whenTime.Text, out dres) && messageRemember.Text.Length >= 1)
+            try
             {
-                
+                if (timer != null)
+                {
+
+
+
+                    MessageBox.Show("Вы не удалили текущее напоминание");
+                }
+                else
+                {
+                    delay = new TimeSpan(int.Parse(startDay.Text), int.Parse(startMin.Text), int.Parse(startSec.Text));
+                    interval = new TimeSpan(int.Parse(intervalDay.Text), int.Parse(intervalMin.Text), int.Parse(intervalSec.Text));
+                    timer = new Timer(new TimerCallback(ShowMessage), messageRemember, delay, interval);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Вы ввели данные неверно");
             }
         }
 
         private void offButtonClick(object sender, RoutedEventArgs e)
         {
-
+            if (timer == null)
+            {
+                MessageBox.Show("Напоминание не установлено");
+            }
+            else
+            {
+                timer = null;
+            }
         }
     }
 }
